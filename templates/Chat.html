@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ChatBot</title>
+    <style>
+        /* Additional CSS styles for the chat messages */
+        .chat-message {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 70%;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .bot-message {
+            background-color: #28a745;
+            color: #fff;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="C:\Users\91991\Desktop\Coding shit\web\static\styles\style.css">
+</head>
+<body>
+        <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+              <image href="robot.png" x="0" y="0" height="100%" width="100%" />
+            </svg>
+            <span class="ml-3 text-xl">ChatBot</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+            <a href="Index.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="Chat.html" class="mr-5 hover:text-gray-900">Chat</a>
+            <a href="Contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+            <a href="About.html" class="mr-5 hover:text-gray-900">About</a>
+          </nav>
+        </div>
+      </header>
+      <br>
+<section class="msger" >
+  <header class="msger-header">
+    <div class="msger-header-title">
+      <i class="fas fa-comment-alt"></i> SimpleChat
+    </div>
+    <div class="msger-header-options">
+      <span><i class="fas fa-cog"></i></span>
+    </div>
+  </header>
+
+  <main class="msger-chat">
+    <div class="msg left-msg">
+      <div
+       class="msg-img"
+       style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
+      ></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">BOT</div>
+          <div class="msg-info-time">12:45</div>
+        </div>
+
+        <div class="msg-text">
+          Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
+        </div>
+      </div>
+    </div>
+
+    <div class="msg right-msg">
+      <div
+       class="msg-img"
+       style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"
+      ></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">Sajad</div>
+          <div class="msg-info-time">12:46</div>
+        </div>
+
+        <div class="msg-text">
+          You can change your name in JS section!
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <form class="msger-inputarea">
+    <input type="text" class="msger-input" placeholder="Enter your message...">
+    <button type="submit" class="msger-send-btn">Send</button>
+  </form>
+</section>
+</body>
+</html>
